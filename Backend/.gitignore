@@ -1,0 +1,10 @@
+/node_modules
+/package-lock.json  # May be ignored, though often tracked for consistency
+
+npm-debug.log*
+.env 
+
+/dist
+/build
+
+.vscode/ # For VS Code settings
