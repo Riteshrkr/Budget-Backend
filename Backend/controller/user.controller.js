@@ -67,7 +67,7 @@ export const Register = async (req,res) => {
             username: user.username,
             email: user.email,
         }
-        return res.cookie('token',accesstoken,{ httpOnly: true,secure: false, sameSite: 'lax', maxAge: 15 * 60 * 1000 })
+        return res.cookie('token',accesstoken,{ httpOnly: true,secure: true, sameSite: 'none', maxAge: 15 * 60 * 1000 })
         .json({
             message:"Login successful",
             success:true,
