@@ -160,7 +160,7 @@ export const getAnalytics = async (req, res) => {
 
     
     const monthlyData = await Expense.aggregate([
-      { $match: { userId } }, // ✅ same fix here
+      { $match: { userId } }, 
       {
         $group: {
           _id: { $month: "$date" },
